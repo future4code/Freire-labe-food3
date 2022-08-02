@@ -3,6 +3,7 @@ import { goToLoginPage } from "../../Routes/Coordinator";
 import { goToCartPage } from "../../Routes/Coordinator";
 import {useNavigate} from "react-router-dom"
 
+
 const HomePage =()=> {
     const navigate = useNavigate()
 
@@ -11,6 +12,7 @@ const HomePage =()=> {
             <h1>HOME PAGE</h1>
         <button onClick={()=> goToLoginPage(navigate)}>Login</button>
         <button onClick={()=> goToCartPage(navigate)}>Carrinho</button>
+        
         </div>
     )
 }
