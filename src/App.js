@@ -1,12 +1,17 @@
 import React from "react";
-import Router from "./Routes/Router";
+import Routes from "./Routes/Routes";
+import GlobalState from "./Global/GlobalState";
+import Tema from "./Tema/Tema";
 
 function App() {
   return (
     <div>
-      <Router>
-       <h1>PROJETO LABEFOOD - GRUPO 3</h1> 
-       </Router>
+      <GlobalState>
+        <Tema>
+          <Routes />
+        
+        </Tema>
+       </GlobalState>
     </div>
   );
 }

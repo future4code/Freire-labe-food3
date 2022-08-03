@@ -1,23 +1,11 @@
-export const goToLoginPage = (navigate) => {
-    navigate("/login");
+  export const goToSearchPage = (history) => {
+    history.push('/search')
   };
-  
-  export const goToHomePage = (navigate) => {
-    navigate("/");
+
+  export const goToHomePage = (history) => {
+  history.push('/feed')
   };
-  
-//   export const goToRestaurantDetailPage = (navigate, id) => {
-//     navigate(`/detalhes/${id}`);
-//   };
-  
-  export const goToCartPage = (navigate) => {
-    navigate("/carrinho");
+
+  export const goToRestaurantsPage = (history, id) => {
+    history.push(`/restaurants/${id}`)
   };
-  export const goToProfilePage = (navigate) => {
-    navigate("/perfil");
-  };
-  
-  export const goToLastPage = (navigate) => {
-    navigate(-1);
-  };
-  
