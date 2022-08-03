@@ -2,9 +2,23 @@ export const goToLoginPage = (navigate) => {
   navigate("/login");
 };
 
+<<<<<<< HEAD
 export const goToSignUpPage = (navigate) => {
   navigate("/SignUp");
 };
+=======
+  export const goToSignUpPage = (navigate) => {
+    navigate("/SignUp");
+  };
+  
+  export const goToSignAddress = (navigate) => {
+    navigate("/cadastrarendereco")
+}
+
+  export const goToHomePage = (navigate) => {
+    navigate("/");
+  };
+>>>>>>> bb0d9918c4ebd99cedd17b8f52de0f428dee4598
 
 export const goToHomePage = (navigate) => {
   navigate("/");

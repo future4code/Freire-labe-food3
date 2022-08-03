@@ -5,7 +5,6 @@ import { login } from "../../services/users"
 import { useNavigate } from "react-router-dom";
 import { Button } from '@chakra-ui/react'
 
-
 const LoginForm = () => {
 
     const [form, onChange, clear] = useForm({ email: "", password: "" })
@@ -19,7 +18,7 @@ const LoginForm = () => {
     return (
         <LoginStyled>
             <form onSubmit={onSubmitForm}>
-                <p>EMAIL</p>
+                <p>E-mail*</p>
                 <input
                     placeholder={"seuemail@email.com"}
                     type={"email"}
@@ -28,16 +27,17 @@ const LoginForm = () => {
                     onChange={onChange}
                     required
                 />
-                <p>PASSWORD</p>
+                <p>Senha*</p>
                 <input
-                    placeholder={"********"}
+                    placeholder={"Mínimo 6 caracters"}
                     type={"password"}
                     name={"password"}
                     value={form.password}
                     onChange={onChange}
                     required
                 />
-                <Button colorScheme='teal' variant='solid' >Entrar</Button>
+                <Button colorScheme='red' type="submit" variant='solid' >Entrar</Button>
+
             </form>
         </LoginStyled>
 
