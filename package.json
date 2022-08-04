@@ -3,12 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "@chakra-ui/provider": "^2.0.9",
-=======
     "@chakra-ui/alert": "^2.0.4",
     "@chakra-ui/icons": "^2.0.4",
->>>>>>> bb0d9918c4ebd99cedd17b8f52de0f428dee4598
+    "@chakra-ui/provider": "^2.0.9",
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",

@@ -18,16 +18,16 @@ export const restaurantList = (navigate) => {
     .catch((err) => console.log(err.response.data.message));
 };
 
-export const restaurantDetail = (navigate) => {
+export const restaurantDetail = (navigate,id) => {
   axios
-    .get(`${BASE_URL}/restaurants/:restaurantId`, {
+    .get(`${BASE_URL}/restaurants/${id}`, {
       headers: {
         auth: localStorage.getItem("token"),
-      },
+      }
     })
     .then((res) => {
-    
+    console.log(res)
       goToRestaurantDetailPage(navigate);
     })
-    .catch((err) => alert(err.response.data.message));
+    .catch((err) => console.log(err));
 };
