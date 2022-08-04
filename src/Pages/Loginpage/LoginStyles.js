@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const LoginStyled = styled.div`
+    margin-bottom: 30px; 
     box-sizing: border-box;
     display: flex; 
     align-items: center;
@@ -36,8 +37,8 @@ export const LoginStyled = styled.div`
 
     input {
         box-sizing: border-box;
-        width: 20.5rem; 
-        height: 3.5rem;
+        width: 300px; 
+        height: 50px;
         border-radius: 5px;
         border: 1px solid #B8B8B8; 
         margin-top: 40px; 
@@ -49,9 +50,6 @@ export const LoginStyled = styled.div`
             :focus { 
     outline: none !important;
     border-color: #E8222E;
-    select:has(option[value=""]) {
-  color: white;
-}
     }
     }
 
@@ -63,8 +61,8 @@ export const LoginStyled = styled.div`
         align-items: center;
         justify-content: center; 
         cursor: pointer;
-        width: 20.5rem;
-        height: 2.625rem;
+        width: 300px;  
+        height: 40px;
         border: 1px solid #E8222E; 
         border-radius: 5px; 
         background-color: #E8222E; 
@@ -74,16 +72,18 @@ export const LoginStyled = styled.div`
             background-color: red; 
         }
       }
+      
 `
 
 export const PageContainer = styled.div`
-height: 100vh; 
+
+margin-top: 10%; 
+
     img {
      width: 6.5rem;
     height: 3.625rem;
     object-fit: contain;
     margin-bottom: 5%; 
-    margin-top: 15%; 
     }
 
     h3 {
@@ -93,14 +93,4 @@ height: 100vh;
         font-weight:500;
     }
 
-`
-export const ShowPassword = styled.div`
-    position: relative; 
-   svg { 
-    position: absolute; 
-    right: 0;
-    margin-right: 4%; 
-    top: 60%;  
-    color: grey; 
-   }
 `
