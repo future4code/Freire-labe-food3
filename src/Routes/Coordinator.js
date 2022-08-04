@@ -36,14 +36,19 @@ export const goToRestaurantPage = (navigate,id) => {
 //   export const goToRestaurantDetailPage = (navigate, id) => {
 //     navigate(`/detalhes/${id}`);
 //   };
+  
+  export const goToCartPage = (navigate) => {
+    navigate("/carrinho");
+  };
+  export const goToProfilePage = (navigate) => {
+    navigate("/myProfile");
+  };
+  
+  export const goToLastPage = (navigate) => {
+    navigate(-1);
+  };
 
-export const goToCartPage = (navigate) => {
-  navigate("/carrinho");
-};
-export const goToProfilePage = (navigate) => {
-  navigate("/myProfile");
-};
+  export const goToEditPage = (navigate) =>{
+    navigate("/profileEditPage")
+  }
 
-export const goToLastPage = (navigate) => {
-  navigate(-1);
-};

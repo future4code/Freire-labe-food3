@@ -1,9 +1,9 @@
 import React from "react";
 import { goToLoginPage } from "../../Routes/Coordinator";
-import { goToCartPage } from "../../Routes/Coordinator";
-import { useNavigate } from "react-router-dom";
+import { goToCartPage, goToProfilePage } from "../../Routes/Coordinator";
 import { Button } from "@chakra-ui/react";
-
+import { useNavigate } from "react-router-dom";
+import RestaurantDetailPage from "../RestaurantDetailPage/RestaurantDetailPage";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -11,8 +11,6 @@ const HomePage = () => {
   return (
     <div>
       <h1>HOME PAGE</h1>
-    
-
       <Button
         colorScheme="teal"
         variant="solid"
@@ -27,8 +25,15 @@ const HomePage = () => {
       >
         Carrinho
       </Button>
+      <Button
+        colorScheme="teal"
+        variant="outline"
+        onClick={() => goToProfilePage(navigate)}
+      >
+        perfil
+      </Button>
 
-   
+      <RestaurantDetailPage/>
     </div>
   );
 };

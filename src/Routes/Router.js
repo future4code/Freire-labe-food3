@@ -6,7 +6,9 @@ import CartPage from "../Pages/CartPage/CartPage";
 import HomePage from "../Pages/Homepage/HomePage";
 import RestaurantDetailPage from "../Pages/RestaurantDetailPage/RestaurantDetailPage";
 import MyProfilePage from "../Pages/MyProfilePage/MyProfilePage";
+import ProfileEditPage  from "../Pages/ProfileEditPage/ProfileEditPage";
 import SignAddressPage  from "../Pages/SignAddressPage/SignAddresPage";
+
 
 const Router = () => {
   return (
@@ -20,6 +22,7 @@ const Router = () => {
         <Route path="/myProfile" element={<MyProfilePage />} />
         <Route path="/cadastrarendereco" element={<SignAddressPage />} />
         <Route path="/myProfile" element={<MyProfilePage/>}/>
+        <Route path="/profileEditPage" element={<ProfileEditPage/>}/>
       </Routes>
     </BrowserRouter>
   );
