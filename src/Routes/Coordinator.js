@@ -34,3 +34,4 @@ export const goToLoginPage = (navigate) => {
   export const goToEditPage = (navigate) =>{
     navigate("/profileEditPage")
   }
+  
