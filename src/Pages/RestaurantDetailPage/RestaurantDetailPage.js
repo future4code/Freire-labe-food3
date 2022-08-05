@@ -1,10 +1,10 @@
 import { React, useEffect, useState, useContext, useDisclosure } from "react";
-import { goToLastPage } from "../../Routes/Coordinator";
+import { goToHomePage } from "../../Routes/Coordinator";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 // import useProtectedPage from "../../hooks/useProtectedPage";
 import GlobalContext from "../../Global/GlobalContext";
-import SearchBar from "../../Components/SearchBar/SearchBar";
+// import SearchBar from "../../Components/SearchBar/SearchBar";
 import {
   Box,
   Button,
@@ -27,7 +27,7 @@ const RestaurantDetailPage = () => {
   const { states, requests, setTers } = useContext(GlobalContext);
 
   const { cart } = states;
-  const { setCart } = setters;
+  const { setCart } = setTers;
   const [selectedProduct, setSelectedProduct] = useState({});
   const [valor, setValor] = useState(1);
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -100,7 +100,7 @@ const RestaurantDetailPage = () => {
 
   return (
     <div>
-    <Header titulo="Restaurante"/>
+    {/* <Header titulo="Restaurante"/> */}
 
 <Flex
   direction='column'
