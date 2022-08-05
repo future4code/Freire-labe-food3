@@ -51,7 +51,8 @@ const Home = () => {
           maxW='328px'
           gap='8px'
         >
-          <CardRestaurante categoria={categoria} />
+          <CardRestaurante categoria={categoria}
+          />
         </Flex>      
       </Flex>
       <SearchBar />

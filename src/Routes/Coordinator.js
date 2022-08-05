@@ -3,11 +3,11 @@ export const goToLoginPage = (navigate) => {
 };
 
 export const goToSignUpPage = (navigate) => {
-  navigate("/SignUp");
+  navigate("/signup");
 };
 
 export const goToSignAddress = (navigate) => {
-  navigate("/cadastrarendereco");
+  navigate("/insert-address");
 };
 
 export const goToHomePage = (navigate) => {
@@ -15,18 +15,18 @@ export const goToHomePage = (navigate) => {
 };
 
 export const goToRestaurantDetailPage = (navigate, id) => {
-  navigate(`/restaurantes/detalhes/1`);
+  navigate(`/restaurants/details/${id}`);
 };
 
 export const goToRestaurantPage = (navigate,id) => {
-  navigate(`/restaurantes/${id}`);
+  navigate(`/restaurants/${id}`);
 };
   
   export const goToCartPage = (navigate) => {
-    navigate("/carrinho");
+    navigate("/cart");
   };
   export const goToProfilePage = (navigate) => {
-    navigate("/myProfile");
+    navigate("/my-profile");
   };
   
   export const goToLastPage = (navigate) => {
@@ -34,7 +34,7 @@ export const goToRestaurantPage = (navigate,id) => {
   };
 
   export const goToEditPage = (navigate) =>{
-    navigate("/profileEditPage")
+    navigate("/profile-edit")
   }
 
   export const goToHome = (navigate) => {
@@ -42,6 +42,6 @@ export const goToRestaurantPage = (navigate,id) => {
   };
   
   export const goToSearch = (navigate) => {
-    navigate("/busca");
+    navigate("/search");
   };
   
