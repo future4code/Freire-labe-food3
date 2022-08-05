@@ -1,9 +1,8 @@
 import { React, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, VStack } from "@chakra-ui/react";
-
 import GlobalContext from "../../Global/GlobalContext";
-
+import { goToRestaurantDetailPage } from "../../Routes/Coordinator";
 
 const CardRestaurante = (props) => {
   const navigate = useNavigate();
@@ -35,6 +34,7 @@ const CardRestaurante = (props) => {
                 border="1px solid #262626"
                 borderRadius="5px"
                 key={restaurante.id}
+                onClick={()=>goToRestaurantDetailPage(navigate,restaurante.id)}
                 
               >
                 <Box

@@ -1,30 +1,32 @@
 export const goToLoginPage = (navigate) => {
-    navigate("/login");
-  };
+  navigate("/login");
+};
 
-  export const goToSignUpPage = (navigate) => {
-    navigate("/SignUp");
-  };
-  
-  export const goToSignAddress = (navigate) => {
-    navigate("/cadastrarendereco")
-}
+export const goToSignUpPage = (navigate) => {
+  navigate("/signup");
+};
 
-  export const goToHomePage = (navigate) => {
-    navigate("/");
-  };
+export const goToSignAddress = (navigate) => {
+  navigate("/insert-address");
+};
 
+export const goToHomePage = (navigate) => {
+  navigate("/");
+};
 
-  
-//   export const goToRestaurantDetailPage = (navigate, id) => {
-//     navigate(`/detalhes/${id}`);
-//   };
+export const goToRestaurantDetailPage = (navigate, id) => {
+  navigate(`/restaurant/detail/${id}`);
+};
+
+export const goToRestaurantPage = (navigate,id) => {
+  navigate(`/restaurants/${id}`);
+};
   
   export const goToCartPage = (navigate) => {
-    navigate("/carrinho");
+    navigate("/cart");
   };
   export const goToProfilePage = (navigate) => {
-    navigate("/myProfile");
+    navigate("/my-profile");
   };
   
   export const goToLastPage = (navigate) => {
@@ -32,15 +34,14 @@ export const goToLoginPage = (navigate) => {
   };
 
   export const goToEditPage = (navigate) =>{
-    navigate("/profileEditPage")
+    navigate("/profile-edit")
   }
-
 
   export const goToHome = (navigate) => {
     navigate("/feed");
   };
   
   export const goToSearch = (navigate) => {
-    navigate("/busca");
+    navigate("/search");
   };
   

@@ -18,7 +18,6 @@ const LoginForm = () => {
         login(form, clear, navigate)
     }
 
-
     return (
         <LoginStyled>
             <form onSubmit={onSubmitForm}>

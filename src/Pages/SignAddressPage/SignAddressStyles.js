@@ -15,7 +15,6 @@ export const IconPosition = styled.div`
    margin-left: 10px; 
 `
 
-
 export const Title = styled.div`
     display: flex; 
     align-items: center;

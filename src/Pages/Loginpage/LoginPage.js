@@ -7,7 +7,6 @@ import RedLogo from "../../assets/RedLogo.png"
 import { PageContainer } from "./LoginStyles"
 import SplashScreen from "../../Components/SplashScreen/SplashScreen";
 
-
 function LoginPage() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
@@ -21,6 +20,10 @@ function LoginPage() {
       <img src={RedLogo} alt='logomarca - ifuture vermelha'/>
       <h3>Entrar</h3>
       <LoginForm />
+      <button
+        onClick={() => goToSignUpPage(navigate)}
+      >Não possui conta? Cadastre-se
+      </button>
       </>
       )}
       <Button colorScheme='black' variant='ghost'
@@ -29,6 +32,7 @@ function LoginPage() {
       </Button>
       </Stack>
     </PageContainer>
+
   );
 }
 

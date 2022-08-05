@@ -31,12 +31,12 @@ const GlobalState = (props) => {
 
 
   const states = {restaurantes}
-  const setters = {setRestaurantes}
+  const setTers = {setRestaurantes}
   const requests = {pegarRestaurantes, pegarDetalhes}
 
   
   return (
-    <GlobalContext.Provider value={{states, setters, requests}}>
+    <GlobalContext.Provider value={{states, setTers, requests}}>
       {props.children}
     </GlobalContext.Provider>
   )

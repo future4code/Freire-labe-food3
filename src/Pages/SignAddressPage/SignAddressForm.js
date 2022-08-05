@@ -5,7 +5,6 @@ import { signAddres } from "../../services/users"
 import { useNavigate } from "react-router-dom";
 import { Button } from '@chakra-ui/react'
 
-
 const SignUpForm = () => {
     const navigate = useNavigate()
     const [form, onChange, clear] = useForm({ street:"", number:"", neighbourhood:"", city:"", state:"", complement:""})
@@ -79,4 +78,4 @@ const SignUpForm = () => {
     )
 };
 
-export default SignUpForm; 
+export default SignUpForm;
