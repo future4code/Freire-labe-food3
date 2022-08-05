@@ -1,22 +1,19 @@
 import { BASE_URL } from "../../constants/url";
 import CardHistoric from "../../Components/CardHistoric";
-
 import { useNavigate } from "react-router-dom";
-
 import { Flex, Text, Image } from "@chakra-ui/react";
 import { goToEditPage, goToSignAddress } from "../../Routes/Coordinator";
 import edit from "../../assets/edit.png";
 import useRequestData from "../../hooks/useRequestData";
 import useProtectedPage from "../../hooks/useRequestData";
+import BarraNavegacao from "../../Components/SearchBar/SearchBar";
 
 export default function MyProfilePage() {
   useProtectedPage();
   const navigate = useNavigate();
   const getProfile = useRequestData([], `${BASE_URL}/profile`);
   const UserData = getProfile.user && getProfile.user;
-
   const getHistory = useRequestData([], `${BASE_URL}/orders/history`);
-
   const History = getHistory.orders && getHistory.orders;
 
   const CardHistory =
@@ -30,7 +27,7 @@ export default function MyProfilePage() {
       />
     }
     );
- 
+
   return (
     <Flex p="6" flexDirection={"column"} >
       <br />
@@ -88,8 +85,14 @@ export default function MyProfilePage() {
       <Flex flexWrap="wrap" justifyContent={"center"} >
         {CardHistory}
       </Flex>
+      <Flex flexWrap="wrap" justifyContent={"center"} >
+        {CardHistory}
+
+      </Flex>
 
       {/* {(CardHistory && CardHistory !==0 ) || ((CardHistory && CardHistory === 0 && CardHistory === null )) ?CardHistory:<Text mt="3" ml="3">Você não realizou nenhum pedido</Text>} */}
+      {BarraNavegacao()}
     </Flex>
+
   );
 }

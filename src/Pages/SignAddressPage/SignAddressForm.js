@@ -5,11 +5,9 @@ import { signAddres } from "../../services/users"
 import { useNavigate } from "react-router-dom";
 import { Button } from '@chakra-ui/react'
 
-
 const SignUpForm = () => {
-
-    const [form, onChange, clear] = useForm({ street:"", number:"", neighbourhood:"", city:"", state:"", complement:""})
     const navigate = useNavigate()
+    const [form, onChange, clear] = useForm({ street:"", number:"", neighbourhood:"", city:"", state:"", complement:""})
 
     const onSubmitForm = (event) => {
         event.preventDefault()
@@ -38,14 +36,13 @@ const SignUpForm = () => {
                     onChange={onChange}
                     required
                 />
-                <p>Complemento*</p>
+                <p>Complemento</p>
                 <input
                     placeholder={"Apto. /Bloco"}
                     type={"text"}
                     name={"complement"}
                     value={form.complement}
                     onChange={onChange}
-                    required
                 />
                 <p>Bairro*</p>
                 <input
@@ -81,4 +78,4 @@ const SignUpForm = () => {
     )
 };
 
-export default SignUpForm; 
+export default SignUpForm;
