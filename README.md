@@ -1,13 +1,6 @@
 <h1 align="center">
 <img width=800 src="https://user-images.githubusercontent.com/104602579/183106447-2e64e9b5-cf76-4b1b-a1e0-0638e7459bc6.png">
 </h1>
-<h3 align="center">
- ✔ Aplicação web com foco exclusivo na versão mobile; <br/>
-</h3>
-
-## 📲 User demo ➜ [Link Surge](https://ifuture-group3.surge.sh/)
-- Login: IfutureTeste@gmail.com
-- Senha: 123456
 
 <h3 align="center">
   🔊 Ative o Som Para Ter Uma Experiência Mais Agradável 😁  <br/>
@@ -18,6 +11,14 @@
 https://user-images.githubusercontent.com/60453269/185650316-fea65703-3bf1-4623-946c-77dbcc7904a8.mp4
 
 <br/>
+
+## 📲 User demo ➜ [Link Surge](https://ifuture-group3.surge.sh/)
+- Login: IfutureTeste@gmail.com
+- Senha: 123456
+
+<h3 align="center">
+ ✔ Aplicação web com foco exclusivo na versão mobile <br/>
+</h3>
 
 ## 📷 Imagens 
 
