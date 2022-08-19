@@ -5,7 +5,7 @@
  ✔ Aplicação web com foco exclusivo na versão mobile; <br/>
 </h3>
 
-## 📲 User demo [Link Surge](https://ifuture-group3.surge.sh/)
+## 📲 User demo ➜ [Link Surge](https://ifuture-group3.surge.sh/)
 - Login: IfutureTeste@gmail.com
 - Senha: 123456
 
@@ -14,23 +14,6 @@
 https://user-images.githubusercontent.com/60453269/185650316-fea65703-3bf1-4623-946c-77dbcc7904a8.mp4
 
 <br/>
-
-
-
-## ⚛️ Tecnologias utilizadas 
-- React Js
-- Styled Components 
-- Design Systems (Chakra UI)
-- Axios 
-
-## 🖥️ Libs para instalar e visualizar o projeto 
-- Chakra UI -> npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
-- Chakra Icons -> npm i @chakra-ui/icons
-- CPF Mask -> npm install react-imask
-- Axios -> npm i axios
-- Styled Components -> npm i styled-components 
-- React Icons (Hide/show eyes) -> npm install react-icons --save
-- Chakra Alert -> npm i @chakra-ui/alert
 
 ## 📷 Imagens 
 
@@ -48,6 +31,21 @@ https://user-images.githubusercontent.com/60453269/185650316-fea65703-3bf1-4623-
   <img width='180px' src='https://user-images.githubusercontent.com/60453269/183474587-f216a148-5507-498a-b92f-49d8b8c31633.png'></img>
   <img width='180px' src='https://user-images.githubusercontent.com/60453269/183474579-ebf9d0a9-2b5d-423b-8dbe-9cb074a21258.png'></img>
 </div> 
+
+## ⚛️ Tecnologias utilizadas 
+- React Js
+- Styled Components 
+- Design Systems (Chakra UI)
+- Axios 
+
+## 🖥️ Libs para instalar e visualizar o projeto 
+- Chakra UI  ➜ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+- Chakra Icons ➜ npm i @chakra-ui/icons
+- CPF Mask ➜ npm install react-imask
+- Axios ➜ npm i axios
+- Styled Components ➜ npm i styled-components 
+- React Icons (Hide/show eyes) ➜ npm install react-icons --save
+- Chakra Alert ➜ npm i @chakra-ui/alert
 
 ## 👨‍💻 Funcionalidades do Projeto
 ### 🔒 Fluxo de Login/Cadastro
